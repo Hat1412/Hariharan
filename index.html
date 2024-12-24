@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon_1412.ico?1124" type="image/x-icon">
+    <title>Hariharan Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Helvetica;
+            background-image: gradient(#000000, #00bcd4);
+            background-size: cover;
+            background-attachment: fixed;
+            overflow-wrap: break-word;
+            word-wrap: break-word;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px;
+            background: rgba(62, 62, 62, 0.7);
+            position: sticky;
+            top: 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            top: 0;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            position: sticky;
+        }
+
+        nav a:hover {
+            color: #00bcd4;
+        }
+
+        .hero {
+            background-image: url('DNA.png');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 50vh;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            position: absolute;
+            left: 10%;
+            top: 0%;
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        .hero p {
+            position: absolute;
+            margin: 10px 0;
+        }
+
+        .divider {
+            position: absolute;
+            width: 20%;
+            height: 2px;
+            background: white;
+            margin: 20px 0;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #ffffff;
+        }
+
+        .section {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .section-dark {
+            background-color: #003b37;
+        }
+
+        .section-light {
+            background-color: #1a1a1a;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        .projects,
+        .services {
+            display: inline;
+            justify-content: center;
+        }
+
+        .project-card {
+            background-color: #ffffff;
+            color: #000000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(255, 255, 255, 0.5);
+            text-align: center;
+        }
+
+        .project-card img {
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .about-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            padding: 50px;
+            background-color: #003b37;
+        }
+
+        .about-section img {
+            border-radius: 10px;
+            max-width: 450px;
+            height: auto;
+        }
+
+        .about-text {
+            color: #ffffff;
+            max-width: 65%;
+        }
+
+        .carousel {
+            position: relative;
+        }
+
+        .contact-container {
+            text-align: center;
+            background: #c0c0c0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            /* width: max; */
+        }
+
+        .contact-container h1 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .social-links a {
+            text-decoration: none;
+        }
+
+        .social-links img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links img:hover {
+            transform: scale(1.2);
+        }
+
+        .carousel-text {
+            margin-top: 15px;
+            font-size: 1rem;
+        }
+
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .carousel img {
+            max-width: 80%;
+            gap: 50px;
+            margin: 0 auto;
+            display: block;
+            /* border-radius: 50%; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about-text">About</a>
+        <a href="#projects-skills">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="hero" id="home">
+        <h1>Hariharan</h1>
+        <p style="font-size: 5vh;    bottom: 60%;    left: 8%;color: #003036;">Passionate Student Of Biology </p>
+        <div class="divider" style=" bottom: 57%;    left: 8.2%;"></div>
+        <p style="font-size: 3.2vh;  bottom: 52%;    left: 8.2%;">Looking for internships to gain practical
+            experience</span></p>
+
+    </div>
+
+    <section class="about-section">
+        <img src="me.jpg" alt="Hariharan" style="margin: 5%;">
+        <div class="about-text" id="about-text">
+            <p style="font-size: 5vh; text-decoration: underline 1px; text-underline-offset: 30%;">About Hariharan</p>
+            <p style="font-size: 3.2vh;">Hariharan is a passionate student studying Bsc. Biochemistry, Biotechnology,
+                and Microbiology. He aims to use his knowledge and skills to contribute to science through innovative
+                projects and research.</p>
+        </div>
+    </section>
+
+
+    <section class="section section-dark" style="background-color: #1a1a1a;">
+        <h1 id="projects-skills">PROJECTS</h1><br><br>
+        <div class="carousel" style="display: flex; justify-content: center; align-items: center;">
+            <a href="//hat1412.github.io/Binomial-Nomenclature/"> <img src="Binomial_Skills.png"></a>
+            <a href=""> <img src="Vaayu+_Skills.png"></a>
+            <a href=""> <img src="Blender_Skills.png"></a>
+            <!-- <a href="//hat1412.github.io/Binomial-Nomenclature/"> <img src="Binomial_Skills.png"></a> -->
+        </div>
+    </section>
+
+    <div class="contact-container">
+
+        <footer id="contact">
+            <h1>Contact Me</h1>
+            <div class="social-links">
+                <a href="mailto:your-email@example.com" target="_blank">
+                    <img src="https://img.icons8.com/ios-filled/50/email.png" alt="Email">
+                </a>
+                <a href="https://github.com/your-username" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/50/github.png" alt="GitHub">
+                </a>
+                <a href="https://instagram.com/your-username" target="_blank">
+                    <img src="https://img.icons8.com/ios-glyphs/50/instagram-new.png" alt="Instagram">
+                </a>
+            </div>
+    </div>
+    <p style="text-align: center">&copy; 2024 Hariharan. All rights reserved.</p>
+    </footer>
+
+</body>
+
+
+</html>
