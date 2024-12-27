@@ -10,9 +10,10 @@ with open(dest1, "r") as f:
     l = json.load(f)
 
 
+
 def update_new_data():
     new_data = {}
-
+    new_data = {k: v for k, v in new_data.items() if k not in d1}
     d1.update(new_data)
 
 
