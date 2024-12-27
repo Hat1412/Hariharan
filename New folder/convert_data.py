@@ -21,10 +21,8 @@ def update_new_data(counter = 2):
 
 
 def update_final_dest():
-    with open(dest1, "r") as f:
-        d = json.load(f)
-
-    for index, i in enumerate(d.items()):
+    l = []
+    for index, i in enumerate(d1.items()):
         genus = i[1].split(" ")[0]
         species = i[1].split(" ")[1:]
         species = " ".join(species)
@@ -43,5 +41,5 @@ def update_final_dest():
         json.dump(l, f)
 
 if __name__ == "__main__":
-    update_new_data(1)
-    # update_final_dest()
+    # update_new_data(1)
+    update_final_dest()
