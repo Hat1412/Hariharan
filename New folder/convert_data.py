@@ -11,10 +11,13 @@ with open(dest1, "r") as f:
 
 
 
-def update_new_data():
+def update_new_data(counter = 2):
     new_data = {}
     new_data = {k: v for k, v in new_data.items() if k not in d1}
-    d1.update(new_data)
+    if counter == 1:
+        print(new_data)
+    if counter == 2:
+        d1.update(new_data)
 
 
 def update_final_dest():
@@ -40,5 +43,5 @@ def update_final_dest():
         json.dump(l, f)
 
 if __name__ == "__main__":
-    # update_new_data()
-    update_final_dest()
+    update_new_data(1)
+    # update_final_dest()

@@ -17,8 +17,18 @@ def predict(prompt):
         print(response.choices[0].message.content)
 
 
-with open(r"D:\ACHU\Web\Hariharan\New folder\to_update.json", "r") as f:
-    d = json.load(f)
+def load_json_file(json_path):
+    """Load and parse the content of a JSON file."""
+    with open(json_path, "r") as file:
+        data = json.load(file)
+    return json.dumps(data, indent=2)
+
+
+context = load_json_file("final_data.json")
+question = "What is the purpose of the data in the JSON file?"
+predict(
+    f"""I have the following JSON data:{context}. Please answer the question: {question}"""
+)
 
 # l = [
 # "Dog",	,"Cow"	,"Cat"	,"Horse","Donkey",	,"Tiger"	,"Lion"	,"Panther","Leopard",	,"Cheetah"	,"Bear"	,"Elephant","Polar bear",	,"Turtle"	,"Tortoise"	,"Crocodile",
@@ -43,11 +53,6 @@ with open(r"D:\ACHU\Web\Hariharan\New folder\to_update.json", "r") as f:
 # "Lemur",	,"Mule"	,"Baboon"	,"Mammoth",
 # "Blue whale",	"Rat"	,"Snake"	,"Peacock",
 # ]
-# for i in l:
-#     if i not in  
-print(d)
-
-for i in d.keys():
-    predict(f"Give me only the scientific name of {i}")
 
 
+# predict(f"Give me only the scientific name of {i}")
