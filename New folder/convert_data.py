@@ -1,0 +1,43 @@
+import json
+
+source = "bn.json"
+dest1 = "final_data.json"
+
+with open(source, "r") as f:
+    d1 = json.load(f)
+
+with open(dest1, "r") as f:
+    l = json.load(f)
+
+
+def update_new_data():
+    new_data = {}
+
+    d1.update(new_data)
+
+
+def update_final_dest():
+    with open(dest1, "r") as f:
+        d = json.load(f)
+
+    for index, i in enumerate(d.items()):
+        genus = i[1].split(" ")[0]
+        species = i[1].split(" ")[1:]
+        species = " ".join(species)
+
+        l.append(
+            {
+                "id": index + 1,
+                "cn": i[0],
+                "Genus": genus,
+                "Species": species,
+                "bn": i[1],
+            }
+        )
+
+    with open("final_data.json", "w") as f:
+        json.dump(l, f)
+
+if __name__ == "__main__":
+    # update_new_data()
+    update_final_dest()
