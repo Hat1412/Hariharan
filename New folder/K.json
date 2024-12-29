@@ -1,0 +1,142 @@
+[
+    {
+        "id": 1,
+        "cn": "Aardvark",
+        "Genus": "Orycteropus",
+        "Species": "afer",
+        "bn": "Orycteropus afer"
+    },
+    {
+        "id": 2,
+        "cn": "Aardwolf",
+        "Genus": "Proteles",
+        "Species": "cristata",
+        "bn": "Proteles cristata"
+    },
+    {
+        "id": 3,
+        "cn": "Addax",
+        "Genus": "Addax",
+        "Species": "nasomaculatus",
+        "bn": "Addax nasomaculatus"
+    },
+    {
+        "id": 4,
+        "cn": "Adelie Penguin",
+        "Genus": "Pygoscelis",
+        "Species": "adeliae",
+        "bn": "Pygoscelis adeliae"
+    },
+    {
+        "id": 5,
+        "cn": "Aesculapian snake",
+        "Genus": "Zamenis",
+        "Species": "longissimus",
+        "bn": "Zamenis longissimus"
+    },
+    {
+        "id": 6,
+        "cn": "African Bullfrog",
+        "Genus": "Pyxicephalus",
+        "Species": "adspersus",
+        "bn": "Pyxicephalus adspersus"
+    },
+    {
+        "id": 7,
+        "cn": "African Bush Elephant",
+        "Genus": "Loxodonta",
+        "Species": "africana",
+        "bn": "Loxodonta africana"
+    },
+    {
+        "id": 8,
+        "cn": "African Civet",
+        "Genus": "Civettictis",
+        "Species": "civetta",
+        "bn": "Civettictis civetta"
+    },
+    {
+        "id": 9,
+        "cn": "African Clawed Frog",
+        "Genus": "Xenopus",
+        "Species": "laevis",
+        "bn": "Xenopus laevis"
+    },
+    {
+        "id": 10,
+        "cn": "African Forest Elephant",
+        "Genus": "Loxodonta",
+        "Species": "cyclotis",
+        "bn": "Loxodonta cyclotis"
+    },
+    {
+        "id": 11,
+        "cn": "African Grey Parrot",
+        "Genus": "Psittacus",
+        "Species": "erithacus",
+        "bn": "Psittacus erithacus"
+    },
+    {
+        "id": 12,
+        "cn": "African Palm Civet",
+        "Genus": "Nandinia",
+        "Species": "binotata",
+        "bn": "Nandinia binotata"
+    },
+    {
+        "id": 13,
+        "cn": "African Penguin",
+        "Genus": "Spheniscus",
+        "Species": "demersus",
+        "bn": "Spheniscus demersus"
+    },
+    {
+        "id": 14,
+        "cn": "African Tree Toad",
+        "Genus": "Nectophryne",
+        "Species": "afra",
+        "bn": "Nectophryne afra"
+    },
+    {
+        "id": 15,
+        "cn": "African Wild Dog",
+        "Genus": "Lycaon",
+        "Species": "pictus",
+        "bn": "Lycaon pictus"
+    },
+    {
+        "id": 16,
+        "cn": "African ground squirrel",
+        "Genus": "Xerus",
+        "Species": "",
+        "bn": "Xerus"
+    },
+    {
+        "id": 17,
+        "cn": "Agama Lizard",
+        "Genus": "Agama",
+        "Species": "",
+        "bn": "Agama"
+    },
+    {
+        "id": 18,
+        "cn": "Ageratum",
+        "Genus": "Ageratum",
+        "Species": "houstonianum",
+        "bn": "Ageratum houstonianum"
+    },
+    {
+        "id": 19,
+        "cn": "Albacore Tuna",
+        "Genus": "Thunnus",
+        "Species": "alalunga",
+        "bn": "Thunnus alalunga"
+    },
+    {
+        "id": 20,
+        "cn": "Albatross",
+        "Genus": "Diomedeidae",
+        "Species": "",
+        "bn": "Diomedeidae"
+    }
+]

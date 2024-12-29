@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D Models Showcase</title>
+    <meta name="viewport" content="width=device-width">
     <style>
         body {
             margin: 0;
@@ -36,10 +37,52 @@
 
         .container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            text-align: center;
             padding: 20px;
+            background-color: rgba(255, 255, 255, 0.5);
+            width: fit-content;
+            backdrop-filter: blur(90%);
+            margin: 50px auto;
+            padding: 10px;
+            position: relative;
+            animation: 4.6s infinite glow;
+            border: 5px solid;
+
+            border-image-slice: 1;
+
+
+        }
+
+        @keyframes glow {
+            0% {
+                border-image-source: conic-gradient(
+                        /* from var(--startDeg, 0deg), */
+                        red, blue, violet, red);
+            }
+
+            25% {
+                border-image-source: conic-gradient(
+                        /* from var(--startDeg, 0deg), */
+                        red, blue, violet, red);
+            }
+
+            50% {
+                border-image-source: conic-gradient(
+                        /* from var(--startDeg, 0deg), */
+                        blue, violet, red, blue);
+            }
+
+            75% {
+                border-image-source: conic-gradient(
+                        /* from var(--startDeg, 0deg), */
+                        violet, red, blue, violet);
+            }
+
+            100% {
+                border-image-source: conic-gradient(
+                        /* from var(--startDeg, 0deg), */
+                        red, blue, violet, red);
+            }
         }
 
         .model {
@@ -88,22 +131,8 @@
             cursor: pointer;
         }
 
-        .contact-container {
-            text-align: center;
-            background: #c0c0c0;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            /* width: max; */
-        }
-
-        .contact-container h1 {
-            margin-bottom: 20px;
-            font-size: 24px;
-            color: #333;
-        }
-
         .social-links {
+            padding-top: 10%;
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -130,7 +159,6 @@
     <canvas id="starsCanvas"></canvas>
 
     <header>3D Models Showcase</header>
-
     <div class="container">
         <div class="model">
             <img src="3D models/model1.png" alt="Model 1" onclick="openModal('model1.png')">
@@ -143,7 +171,7 @@
         </div>
 
         <div class="model">
-            <img src="3D models/" alt="Model 3" onclick="openModal('model3.png')">
+            <img src="3D models/model3.png" alt="Model 3" onclick="openModal('model3.png')">
             <div class="model-name">Model 3</div>
         </div>
     </div>
@@ -241,10 +269,12 @@
             createStars();
         });
 
+        currmodel = 0;
+
         function openModal(src) {
             const modal = document.getElementById('imageModal');
             const modalImage = document.getElementById('modalImage');
-            modalImage.src = src;
+            modalImage.src = "3d models/" + src;
             modal.style.display = 'flex';
             document.addEventListener('keydown', handleEscapeKey);
         }
@@ -259,6 +289,10 @@
             if (event.key === 'Escape') {
                 closeModal();
             }
+            console.log(currmodel);
+            if (event.key === 'ArrowRight') { };
+
+            if (event.key === 'ArrowLeft') { };
         }
     </script>
 </body>
