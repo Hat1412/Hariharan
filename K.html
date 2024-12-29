@@ -47,7 +47,9 @@
             position: relative;
             animation: 4.6s infinite glow;
             border: 5px solid;
-            border-image: conic-gradient(red, blue, violet, red);
+            border-image-slice: 1;
+            border-image-source: conic-gradient(red, blue, violet, red);
+
         }
 
         @keyframes glow {
@@ -78,6 +80,7 @@
             width: 100%;
             height: auto;
             border-radius: 8px;
+            cursor: pointer;
         }
 
         .model-name {
@@ -110,6 +113,7 @@
             right: 20px;
             font-size: 30px;
             color: white;
+            cursor: pointer;
         }
 
         .social-links {
@@ -140,11 +144,31 @@
     <canvas id="starsCanvas"></canvas>
 
     <header>3D Models Showcase</header>
-    <div class="container" id="3Dcontainer">
+    <div class="container" id="3Dmodelcontainer">
         <!-- <div class="model">
-            <img src="3D models/model1.png" alt="Model 1" onclick="openModal('model1.png')">
+            <img src="3D models/model1.png" alt="Model 1" id="1" onclick="openModal('model1.png')">
             <div class="model-name">Model 1</div>
-        </div>-->
+        </div>
+
+        <div class="model">
+            <img src="3D models/model2.png" alt="Model 2" id="2" onclick="openModal('model2.png')">
+            <div class="model-name">Model 2</div>
+        </div>
+
+        <div class="model">
+            <img src="3D models/model3.png" alt="Model 3" id="3" onclick="openModal('model3.png')">
+            <div class="model-name">Model 3</div>
+        </div>
+
+        <div class="model">
+            <img src="3D models/model4.png" alt="Model 4" id="4" onclick="openModal('model4.png')">
+            <div class="model-name">Model 4</div>
+        </div>
+
+        <div class="model">
+            <img src="3D models/model5.png" alt="Model 5" id="5" onclick="openModal('model5.png')">
+            <div class="model-name">Model 5</div>
+        </div> -->
     </div>
 
     <div class="modal" id="imageModal">
@@ -241,26 +265,23 @@
 
         currmodel = 0;
 
-        model_list = [];
-
-        function createModels() {
-            var doc = document.getElementById('3Dcontainer');
+        function runmodels() {
+            box = document.getElementsByClassName('3Dmodelcontainer');
             for (let i = 1; i <= 5; i++) {
-                doc.innerHTML += `<div class="model">
-                <img src="3D models/model${i}.png" alt="Model ${i}" onclick="openModal('model${i}.png')">
-                    <div class="model-name">Model ${i}</div>
-            </div>`
-                model_list.push(`model${i}.png`);
+                box.innerHTML += `<img src="3D models/model${i}.png" 
+                alt="Model ${i}" id="${i}" onclick="openModal('model${i}.png')">
+                <div class="model-name">Model ${i}</div>`
             }
         }
-
         function openModal(src) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            modalImage.src = "3d models/" + model_list[currmodel];
-            modal.style.display = 'flex';
-            document.addEventListener('keydown', handleEscapeKey);
+
         }
+        // modal.style.display = 'flex';
+        // const modal = document.getElementById('imageModal');
+        // const modalImage = document.getElementById('modalImage');
+        // modalImage.src = "3d models/" + src;
+        document.addEventListener('keydown', handleEscapeKey);
+
 
         function closeModal() {
             const modal = document.getElementById('imageModal');
@@ -273,11 +294,12 @@
                 closeModal();
             }
             console.log(currmodel);
-            if (event.key === 'ArrowRight') { model_list[currmodel + 1] ? openModal(model_list[++currmodel]) : openModal(model_list[currmodel]); };
+            if (event.key === 'ArrowRight') { };
 
-            if (event.key === 'ArrowLeft') { model_list[currmodel - 1] ? openModal(model_list[--currmodel]) : openModal(model_list[currmodel]); };
+            if (event.key === 'ArrowLeft') { };
         }
-        createModels();
+
+        runmodels();
     </script>
 </body>
 
