@@ -1,59 +1,17 @@
-l = [
-    "Axolotl",
-    "Wombat",
-    "Tuatara",
-    "Kestrel",
-    "Tapir",
-    "Gerenuk",
-    "Secretary Bird",
-    "Coati",
-    "Civet Cat",
-    "Harpy Eagle",
-    "Dumbo Octopus",
-    "Shoebill Stork",
-    "Leafy Sea Dragon",
-    "Arapaima",
-    "Quokka",
-    "Pangasius Fish",
-    "Horseshoe Crab",
-    "Velvet Worm",
-    "Antlion",
-    "Nightjar",
-    "Saiga Antelope",
-    "Basking Shark",
-    "Blobfish",
-    "Glass Frog",
-    "Aye-Aye",
-    "Dragon Tree",
-    "Taro ",
-    "Rafflesia (Corpse Flower)",
-    "Golden Barrel Cactus",
-    "Japanese Maple",
-    "Creeping Fig",
-    "Bottlebrush Plant",
-    "Crocus",
-    "Juniper",
-    "Olive Tree",
-    "Secretary Bird",
-    "Gerenuk",
-    "Coati",
-    "Tuatara",
-    "Kestrel",
-    "Tapir",
-    "Civet Cat",
-    "Kiwi(fruit)",
-    "Harpy Eagle",
-    "Pangasius Fish",
-]
+import streamlit as st
+from datetime import datetime
+from time import sleep
 
-"""(Colocasia other varieties not mentioned)"""
-import json
 
-with open("bn.json", "r") as f:
-    d = json.load(f)
+now = datetime.now()
+st.set_page_config(page_title="Timer App", page_icon="⌚")
 
-l2 = d.keys()
+hero = st.container()
+hero.markdown("# Timer App")
 
-for i in l:
-    if i.lower() not in map(str.lower, l2):
-        print(i)
+txt = hero.empty()
+img = st.image("https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif")
+
+
+while 1:    
+    txt.markdown(f" <h1 text-align: center> {now.strftime('%d %A %I : %M : %S')} </p>", unsafe_allow_html=True)

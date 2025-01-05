@@ -1,7 +1,7 @@
 import json
 
-source = "bn.json"
-dest1 = "final_data.json"
+source = r"D:\ACHU\New folder\Hariharan\bn.json"
+dest1 = r"D:\ACHU\New folder\Hariharan\final_data.json"
 
 with open(source, "r") as f:
     d1 = json.load(f)
@@ -10,8 +10,7 @@ with open(dest1, "r") as f:
     l = json.load(f)
 
 
-
-def update_new_data(counter = 2):
+def update_new_data(counter=2):
     new_data = {}
     new_data = {k: v for k, v in new_data.items() if k not in d1}
     if counter == 1:
@@ -39,6 +38,7 @@ def update_final_dest():
 
     with open("final_data.json", "w") as f:
         json.dump(l, f)
+
 
 if __name__ == "__main__":
     # update_new_data(1)
