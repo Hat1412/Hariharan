@@ -1,37 +1,133 @@
 import json
-from ollama import Ollama
+
+l = [
+    "Hippo ",
+    "Rhino",
+    "Cockroach ",
+    "Zebra",
+    "Giraffe ",
+    "Beetle ",
+    "Beetle ",
+    "Bed bug",
+    "Caterpillar ",
+    "Mosquito",
+    "Housefly ",
+    "Snail",
+    "Bee",
+    "Bumblebee ",
+    "Scorpion ",
+    "Crab",
+    "Lobster",
+    "Alligator ",
+    "Tortoise",
+    "Turtle ",
+    "Monkey ",
+    "Gorilla",
+    "Boar",
+    "Bison ",
+    "Hog",
+    "Cheetah ",
+    "Leapord ",
+    "Jaguar",
+    "Panther ",
+    "Tiger",
+    "Lion",
+    "Lioness ",
+    "Puma ",
+    "Orangutan ",
+    "Chimpanzee ",
+    "Dog ",
+    "Cat",
+    "Parrot",
+    "Peagion",
+    "Peacock",
+    "Hen ",
+    "Rooster",
+    "Chicken ",
+    "Crane",
+    "Duck",
+    "Goose",
+    "Swan",
+    "Peahen",
+    "Crow",
+    "Coocoo",
+    "Owl",
+    "Dragonfly",
+    "Fox",
+    "Snow leapord ",
+    "Bear",
+    "Polar bear",
+    "Walrus",
+    "Fish",
+    "Penguin",
+    "Sea lion",
+    "Horse",
+    "Snake",
+    "Boa",
+    "Hyena ",
+    "Jackal",
+    "Wolf",
+    "Kite",
+    "Eagle",
+    "Vulture",
+    "Lamb",
+    "Sheep",
+    "Goat",
+    "Cow",
+    "Octopus",
+    "Whale",
+    "Shark",
+    "Tiger shark",
+    "Kangaroo",
+    "Koala",
+    "llama",
+]
 
 
-def read_json(file_path):
-    """Reads a JSON file and returns its content."""
-    try:
-        with open(file_path, "r") as file:
-            return json.load(file)
-    except FileNotFoundError:
-        print("Error: File not found.")
-        return None
-    except json.JSONDecodeError:
-        print("Error: Invalid JSON file.")
-        return None
+with open("final_data.json", "r") as f:
+    d = json.load(f)
+
+cnl = [i["cn"] for i in d]
+for i in l:
+    if i.lower() not in [ele.lower() for ele in cnl]:
+        print(i)
 
 
-def chat_with_ollama(prompt, model="default_model"):
-    """Sends a prompt to the Ollama chatbot and returns the response."""
-    try:
-        ollama_client = Ollama()
-        response = ollama_client.chat(model=model, prompt=prompt)
-        return response.get("response", "No response returned.")
-    except Exception as e:
-        print(f"Error: {e}")
-        return None
 
+"""Cockroach
+Beetle
+Bed bug
+Caterpillar
+Housefly
+Bee
+Bumblebee
 
-def main():
-# File path to the JSON file containing queries
-    response = chat_with_ollama(query)
-    if response:
-        print(f"Response: {response}\n")
+Scorpion
+Lobster
 
+Alligator
+Mountain Goat
 
-if __name__ == "__main__":
-    main()
+Turtle
+Monkey
+Bison
+Hog
+Cheetah
+Puma
+Orangutan
+Chimpanzee
+Parrot
+Hen
+Rooster
+Chicken
+Duck
+Peahen
+Coocoo
+Snow leapord
+Penguin
+Sea lion
+Boa
+Hyena
+Kite
+Lamb
+Shark"""

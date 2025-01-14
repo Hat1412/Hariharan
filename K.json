@@ -1,0 +1,174 @@
+[
+    {
+        "common_name": "Bald Eagle",
+        "binomial_nomenclature": "Haliaeetus leucocephalus"
+    },
+    {
+        "common_name": "Golden Eagle",
+        "binomial_nomenclature": "Aquila chrysaetos"
+    },
+    {
+        "common_name": "White-tailed Eagle",
+        "binomial_nomenclature": "Haliaeetus albicilla"
+    },
+    {
+        "common_name": "Steller's Sea Eagle",
+        "binomial_nomenclature": "Haliaeetus pelagicus"
+    },
+    {
+        "common_name": "African Fish Eagle",
+        "binomial_nomenclature": "Haliaeetus vocifer"
+    },
+    {
+        "common_name": "Martial Eagle",
+        "binomial_nomenclature": "Polemaetus bellicosus"
+    },
+    {
+        "common_name": "Crowned Eagle",
+        "binomial_nomenclature": "Stephanoaetus coronatus"
+    },
+    {
+        "common_name": "Booted Eagle",
+        "binomial_nomenclature": "Hieraaetus pennatus"
+    },
+    {
+        "common_name": "Bonelli's Eagle",
+        "binomial_nomenclature": "Aquila fasciata"
+    },
+    {
+        "common_name": "Black Kite",
+        "binomial_nomenclature": "Milvus migrans"
+    },
+    {
+        "common_name": "Brahminy Kite",
+        "binomial_nomenclature": "Haliastur indus"
+    },
+    {
+        "common_name": "Red Kite",
+        "binomial_nomenclature": "Milvus milvus"
+    },
+    {
+        "common_name": "Black-winged Kite",
+        "binomial_nomenclature": "Elanus caeruleus"
+    },
+    {
+        "common_name": "Harpy Eagle",
+        "binomial_nomenclature": "Harpia harpyja"
+    },
+    {
+        "common_name": "Philippine Eagle",
+        "binomial_nomenclature": "Pithecophaga jefferyi"
+    },
+    {
+        "common_name": "Bearded Vulture",
+        "binomial_nomenclature": "Gypaetus barbatus"
+    },
+    {
+        "common_name": "Hooded Vulture",
+        "binomial_nomenclature": "Necrosyrtes monachus"
+    },
+    {
+        "common_name": "White-backed Vulture",
+        "binomial_nomenclature": "Gyps africanus"
+    },
+    {
+        "common_name": "Himalayan Vulture",
+        "binomial_nomenclature": "Gyps himalayensis"
+    },
+    {
+        "common_name": "Indian Vulture",
+        "binomial_nomenclature": "Gyps indicus"
+    },
+    {
+        "common_name": "Steppe Eagle",
+        "binomial_nomenclature": "Aquila nipalensis"
+    },
+    {
+        "common_name": "Tawny Eagle",
+        "binomial_nomenclature": "Aquila rapax"
+    },
+    {
+        "common_name": "Greater Spotted Eagle",
+        "binomial_nomenclature": "Clanga clanga"
+    },
+    {
+        "common_name": "Lesser Spotted Eagle",
+        "binomial_nomenclature": "Clanga pomarina"
+    },
+    {
+        "common_name": "Short-toed Snake Eagle",
+        "binomial_nomenclature": "Circaetus gallicus"
+    },
+    {
+        "common_name": "Western Marsh Harrier",
+        "binomial_nomenclature": "Circus aeruginosus"
+    },
+    {
+        "common_name": "Pallid Harrier",
+        "binomial_nomenclature": "Circus macrourus"
+    },
+    {
+        "common_name": "Montagu's Harrier",
+        "binomial_nomenclature": "Circus pygargus"
+    },
+    {
+        "common_name": "Northern Harrier",
+        "binomial_nomenclature": "Circus hudsonius"
+    },
+    {
+        "common_name": "Hen Harrier",
+        "binomial_nomenclature": "Circus cyaneus"
+    },
+    {
+        "common_name": "Eurasian Sparrowhawk",
+        "binomial_nomenclature": "Accipiter nisus"
+    },
+    {
+        "common_name": "Northern Goshawk",
+        "binomial_nomenclature": "Accipiter gentilis"
+    },
+    {
+        "common_name": "Shikra",
+        "binomial_nomenclature": "Accipiter badius"
+    },
+    {
+        "common_name": "Cooper's Hawk",
+        "binomial_nomenclature": "Accipiter cooperii"
+    },
+    {
+        "common_name": "Sharp-shinned Hawk",
+        "binomial_nomenclature": "Accipiter striatus"
+    },
+    {
+        "common_name": "Common Buzzard",
+        "binomial_nomenclature": "Buteo buteo"
+    },
+    {
+        "common_name": "Red-tailed Hawk",
+        "binomial_nomenclature": "Buteo jamaicensis"
+    },
+    {
+        "common_name": "Rough-legged Buzzard",
+        "binomial_nomenclature": "Buteo lagopus"
+    },
+    {
+        "common_name": "Ferruginous Hawk",
+        "binomial_nomenclature": "Buteo regalis"
+    },
+    {
+        "common_name": "Swainson's Hawk",
+        "binomial_nomenclature": "Buteo swainsoni"
+    },
+    {
+        "common_name": "Crested Serpent Eagle",
+        "binomial_nomenclature": "Spilornis cheela"
+    },
+    {
+        "common_name": "Changeable Hawk-Eagle",
+        "binomial_nomenclature": "Nisaetus cirrhatus"
+    },
+    {
+        "common_name": "Mountain Hawk-Eagle",
+        "binomial_nomenclature": "Nisaetus nipalensis"
+    }
+]
