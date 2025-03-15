@@ -4,15 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>3D Models Showcase</title>
     <meta name="viewport" content="width=device-width">
     <style>
         body {
             margin: 0;
             overflow: hidden;
+
+
             background: black;
-            font-family: Arial, sans-serif;
+            font-family: Arial,
+                sans-serif;
             color: white;
+        }
+
+        .fullscreen-btn {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            padding: 10px 20px;
+            background: rgba(255, 255, 255, 0.3);
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1;
         }
 
         canvas {
@@ -160,7 +177,11 @@
 <body>
     <canvas id="starsCanvas"></canvas>
 
-    <header>3D Models Showcase</header>
+    <header>3D Models Showcase
+        <!-- <button style="background-color: transparent; border: 0; text-align: right;"><i class="material-icons"
+                style="color: white;" onclick="toggleFullScreen">fullscreen</i></button> -->
+
+    </header>
     <div class="container" id="3Dcontainer">
         <!-- <div class="model">
             <img src="3D models/model1.png" alt="Model 1" onclick="openModal('model1.png')">
@@ -190,6 +211,7 @@
     </footer>
     </div>
     <script>
+
         const canvas = document.getElementById('starsCanvas');
         const ctx = canvas.getContext('2d');
 
@@ -302,6 +324,16 @@
             // console.log(currmodel);
             if (event.key === 'ArrowRight') { model_list[currmodel] ? openModal(++currmodel) : openModal(currmodel); };
             if (event.key === 'ArrowLeft') { model_list[currmodel - 1] ? openModal(--currmodel) : openModal(currmodel); };
+        }
+
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) {
+                    document.exitFullscreen();
+                }
+            }
         }
         createModels();
     </script>

@@ -1,133 +1,30 @@
-import json
+from kivy.app import App
+from kivy.uix.gridlayout import GridLayout
 
-l = [
-    "Hippo ",
-    "Rhino",
-    "Cockroach ",
-    "Zebra",
-    "Giraffe ",
-    "Beetle ",
-    "Beetle ",
-    "Bed bug",
-    "Caterpillar ",
-    "Mosquito",
-    "Housefly ",
-    "Snail",
-    "Bee",
-    "Bumblebee ",
-    "Scorpion ",
-    "Crab",
-    "Lobster",
-    "Alligator ",
-    "Tortoise",
-    "Turtle ",
-    "Monkey ",
-    "Gorilla",
-    "Boar",
-    "Bison ",
-    "Hog",
-    "Cheetah ",
-    "Leapord ",
-    "Jaguar",
-    "Panther ",
-    "Tiger",
-    "Lion",
-    "Lioness ",
-    "Puma ",
-    "Orangutan ",
-    "Chimpanzee ",
-    "Dog ",
-    "Cat",
-    "Parrot",
-    "Peagion",
-    "Peacock",
-    "Hen ",
-    "Rooster",
-    "Chicken ",
-    "Crane",
-    "Duck",
-    "Goose",
-    "Swan",
-    "Peahen",
-    "Crow",
-    "Coocoo",
-    "Owl",
-    "Dragonfly",
-    "Fox",
-    "Snow leapord ",
-    "Bear",
-    "Polar bear",
-    "Walrus",
-    "Fish",
-    "Penguin",
-    "Sea lion",
-    "Horse",
-    "Snake",
-    "Boa",
-    "Hyena ",
-    "Jackal",
-    "Wolf",
-    "Kite",
-    "Eagle",
-    "Vulture",
-    "Lamb",
-    "Sheep",
-    "Goat",
-    "Cow",
-    "Octopus",
-    "Whale",
-    "Shark",
-    "Tiger shark",
-    "Kangaroo",
-    "Koala",
-    "llama",
-]
+# from kivy.uix.label import Label
+# from kivy.uix.textinput import TextInput
+# from kivy.uix.button import Button
+from kivy.uix import *
 
 
-with open("final_data.json", "r") as f:
-    d = json.load(f)
+class GRID(GridLayout):
+    def __init__(self, **kwargs):
+        super(GRID, self).__init__(**kwargs)
+        self.cols = 2
+        l = [
+            label.Label(text="Name"),
+            textinput.TextInput(multiline=False),
+            # Label(text="Age"),
+            # TextInput(multiline=False),
+        ]
+        for i in l:
+            self.add_widget(i)
 
-cnl = [i["cn"] for i in d]
-for i in l:
-    if i.lower() not in [ele.lower() for ele in cnl]:
-        print(i)
+
+class Myapp(App):
+    def build(self):
+        return GRID()
 
 
-
-"""Cockroach
-Beetle
-Bed bug
-Caterpillar
-Housefly
-Bee
-Bumblebee
-
-Scorpion
-Lobster
-
-Alligator
-Mountain Goat
-
-Turtle
-Monkey
-Bison
-Hog
-Cheetah
-Puma
-Orangutan
-Chimpanzee
-Parrot
-Hen
-Rooster
-Chicken
-Duck
-Peahen
-Coocoo
-Snow leapord
-Penguin
-Sea lion
-Boa
-Hyena
-Kite
-Lamb
-Shark"""
+if __name__ == "__main__":
+    Myapp().run()
